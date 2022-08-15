@@ -1,8 +1,8 @@
 pipeline
 {
     agent any
-          stages
-          {
+        stages
+        {
               stage('Build')
               {
                   steps
@@ -12,9 +12,6 @@ pipeline
                       echo "Build Step completed successfully"
                   }
               }
-          }
-          stages
-          {
               stage('Test')
               {
                   steps
@@ -24,9 +21,6 @@ pipeline
                       echo "Test step completed successfully"
                   }
               }
-          }
-          stages
-          {
               stage('Compile')
               {
                   steps
@@ -36,9 +30,6 @@ pipeline
                       echo "Compile step completed successfully"
                   }
               }
-          }
-          stages
-          {
               stage('Release')
               {
                   echo "Releasing the code"
