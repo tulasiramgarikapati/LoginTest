@@ -32,8 +32,11 @@ pipeline
               }
               stage('Release')
               {
-                  echo "Releasing the code"
-                  echo "Release step completed successfully"
+                  steps
+                  {
+                    echo "Releasing the code"
+                    echo "Release step completed successfully"
+                  }
               }
           }
 }
